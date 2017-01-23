@@ -1,0 +1,14 @@
+/*
+ *  Base.scss: Global styles
+ */
+
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: $base-font-size;
+}
+
+.test {
+  transform: rotate(7deg);
+}

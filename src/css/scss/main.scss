@@ -1,0 +1,19 @@
+/*
+ *  Main.scss: Imports all component files
+ *
+ */
+
+//  Houses Sass that DON'T produce CSS
+@import "modules/all-modules";
+
+//  Houses Sass that DO produce CSS
+@import "partials/all-partials";
+
+//  House all default styling
+@import "base";
+
+
+.testing {
+  width: percentage(5/7);
+  background-color: red;
+}
