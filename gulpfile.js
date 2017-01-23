@@ -14,7 +14,7 @@ var gulp          = require('gulp'),
 
 
 /* -----------------------------------------------------------------------
- * File destinations (relative to assets folder)
+ * File destinations
  ----------------------------------------------------------------------- */
 
 var target = {
@@ -27,8 +27,7 @@ var location = {
   dest: target.dest,
 
   sass_src:   target.src + 'css/scss/',
-
-  css_dest:   target.dest + 'css/',
+  css_dest:   target.dest + 'css/'
 }
 
 
@@ -51,7 +50,7 @@ gulp.task('serve', ['sass'], function() {
  ----------------------------------------------------------------------- */
 
 gulp.task('sass', function() {
-  return gulp.src(location.scss_src + '/**/*.scss')
+  return gulp.src(location.sass_src + '**/*.scss')
     .pipe(sass())
     .pipe(autoprefixer(
       'last 2 version'
